@@ -10,12 +10,19 @@
   <meta property="og:title" content="MindForge AI — Brain Training & Mind Games">
   <meta property="og:description" content="Five minutes a day. Built on research, not hype. The use it or lose it antidote.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://ajoffe3.github.io/mindforge-links/og-image.png">
+  <meta property="og:image" content="https://ajoffe3.github.io/mindforge-links/logo.png">
+  <meta property="og:image:width" content="874">
+  <meta property="og:image:height" content="731">
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="MindForge AI — Brain Training & Mind Games">
   <meta name="twitter:description" content="Five minutes a day. Built on research, not hype.">
+  <meta name="twitter:image" content="https://ajoffe3.github.io/mindforge-links/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
 
   <!-- Theme color for iOS Safari -->
   <meta name="theme-color" content="#070b14">
@@ -77,26 +84,13 @@
     }
 
     .brand-mark {
-      width: 88px;
-      height: 88px;
+      width: 96px;
+      height: 96px;
       margin: 0 auto 20px;
       border-radius: 22px;
-      background:
-        radial-gradient(circle at 30% 30%, rgba(61, 255, 210, 0.4) 0%, transparent 50%),
-        radial-gradient(circle at 70% 70%, rgba(180, 155, 255, 0.4) 0%, transparent 50%),
-        linear-gradient(135deg, #1a1f2e 0%, #0e1424 100%);
+      object-fit: cover;
+      display: block;
       box-shadow: 0 12px 40px rgba(61, 255, 210, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.08);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-
-    /* Inline neon brain SVG */
-    .brand-mark svg {
-      width: 56px;
-      height: 56px;
-      filter: drop-shadow(0 0 8px rgba(61, 255, 210, 0.5));
     }
 
     h1 {
@@ -251,20 +245,7 @@
   <div class="container">
 
     <header>
-      <div class="brand-mark" aria-hidden="true">
-        <!-- Inline neon brain SVG (simplified) -->
-        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="brainGrad" x1="0" y1="0" x2="64" y2="64">
-              <stop offset="0%" stop-color="#3dffd2"/>
-              <stop offset="50%" stop-color="#b49bff"/>
-              <stop offset="100%" stop-color="#ff8a9e"/>
-            </linearGradient>
-          </defs>
-          <path d="M22 14c-4 0-8 2-9 6-3 1-5 4-5 8 0 3 2 6 4 7-1 2-1 5 1 7 1 3 4 5 7 5h2v3c0 2 2 4 4 4h6c2 0 4-2 4-4v-3h2c3 0 6-2 7-5 2-2 2-5 1-7 2-1 4-4 4-7 0-4-2-7-5-8-1-4-5-6-9-6-2 0-4 1-5 2-1-1-3-2-5-2z" stroke="url(#brainGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M27 22v22M37 22v22M22 30h7M22 36h7M35 30h7M35 36h7" stroke="url(#brainGrad)" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-      </div>
+      <img class="brand-mark" src="logo.png" alt="MindForge logo — neon brain on cosmic background" width="96" height="96">
 
       <h1>MindForge</h1>
       <div class="subtitle">AI: Brain Training &amp; Mind Games</div>
